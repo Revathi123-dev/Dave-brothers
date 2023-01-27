@@ -1,0 +1,83 @@
+<div> <table style="margin-bottom: -31px;height: 10px; margin-top: -22px; margin-left: 0px">
+    <tr>
+       <td> 
+         <label for="file" style="padding-top: 7px; margin-top: 12px;position: sticky;margin-bottom: 13px;
+          margin-left: 167px;border:4px"class="btn btn-primary" >UPLOAD NEW PHOTO</label> 
+          <input id="file" style="visibility:hidden;" type="file" (change)="fileuploads($event)"  accept="image/png, image/jpeg, image/PNG">
+         <td>  <div style=" width: 131px; border: 1px; color: gray;border-style: inset;padding-block-end:0px;
+        padding-block-start:52px;position: relative;border-radius: 5px;margin-left:-571px;margin-top: 34px;" >
+        <div  *ngFor="let image of image" >
+       <img [src]="image.url" style="height: 131px; width: 129px;margin-top: -52px; margin-left: 0px; border-radius: 5px;">
+     </div>
+       
+    </div></td>
+    <br>
+    <p style="margin-bottom: 54px;margin-top: 115px;margin-left: -423px;">Allowed JPG,GIF or PNG.Max size of 800K</p>
+     <td><a href="" click="deleteimage(image)" style="text-decoration:none"><button style="margin-left:-226px;margin-bottom:-45px;margin-top:-32px;height:36px;border-radius: 5px;border-color:#FF5050;background-color: white;border-style:inset;border-color:#F5AAAA;width:97px"><b style="color:red">RESET</b></button>
+      </a></td>
+      </tr>
+      </table>
+      </div>
+
+      <!-- code for input form-fields -->
+      <div mat-dialog-content>
+       <form [formGroup]="userForm"> 
+        <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px;width: 515px;">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username" type="text"  placeholder="Enter Username">
+          <mat-error *ngIf="userForm.get('username')">UserName is required</mat-error>
+          <mat-error *ngIf="userForm.get('username')">Please enter UserName</mat-error>
+        </mat-form-field>
+
+       <!--from field for "name" and for displaying error messages using *ngif fot resetting or disposing the subview elements  -->
+      <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px;width: 515px;" >
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" type="text"  placeholder="Enter Name" >
+        <mat-error *ngIf="userForm.get('name')">Name is required</mat-error>
+        <mat-error *ngIf="userForm.get('name')">Please enter Name</mat-error>
+      </mat-form-field>
+      <div class="abc" style="margin-top:-29px">
+
+       <!--from field for "email" and for displaying error messages using *ngif fot resetting or disposing the subview elements  -->
+      <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px;width: 515px;" >
+          <mat-label>Email Address</mat-label>
+          <input type="text" matInput formControlName="email" class="form-input-field"  pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"/>
+         <mat-error *ngIf="userForm.get('email')">Email is required</mat-error>
+          <mat-error *ngIf="userForm.get('email')">Please enter valid email address</mat-error>
+       </mat-form-field>
+
+              <!--from field for "role" and for displaying error messages using *ngif fot resetting or disposing the subview elements  -->
+        <mat-form-field appearance="outline" style="margin-left: 15px;margin-top: 47px;width: 515px;" >
+        <mat-label>Role</mat-label>
+        <input matInput  type="text" formControlName="role" placeholder="Enter Name" >
+        <mat-error *ngIf="userForm.get('role')">Your role is required</mat-error>
+        <mat-error *ngIf="userForm.get('role')">please enter your role</mat-error>
+      </mat-form-field>
+      </div>
+       
+
+          <!--from field for "status" and for displaying error messages using *ngif fot resetting or disposing the subview elements  -->
+        <div class="abcd" style="margin-top:-29px">
+        <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px;width: 515px;" >
+        <mat-label>Status</mat-label>
+        <input matInput  type="text" formControlName="status" placeholder="Status">
+        <mat-error *ngIf="userForm.get('status')">Status is required</mat-error>
+      </mat-form-field>
+
+
+       <!--from field for "company" and for displaying error messages using *ngif fot resetting or disposing the subview elements  -->
+      <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px; width: 515px;" >
+      <mat-label>Company</mat-label>
+        <input matInput  type="text" formControlName="company" placeholder="Status" >
+        <mat-error *ngIf="userForm.get('company')">CompanyNameis required</mat-error>
+      </mat-form-field>
+      </div>
+    <!-- button for saving details in .json server in 3000 port in company object Array. -->
+    <button mat-raised-button (click)="addproduct()" class="btn btn-primary" style="margin-left: 16px;width: 165px;" >SAVE CHANGES</button>
+    <button style="margin-left: 16px;height: 36px;width: 90px;border-radius: 5px;color: #585858;color: #B0B0B0;
+    background-color: white;
+    border-color:black;  " class="abcd" (click)="log()" >CANCEL</button>
+     </form>
+
+      
+    

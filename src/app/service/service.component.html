@@ -1,0 +1,90 @@
+ <div mat-dialog-content>
+       <form [formGroup]=" informationForm"> 
+        <div style="margin-top: -25px;">
+          <div class="">
+
+            <!-- mat form field for bio -->
+      <mat-form-field appearance="outline" style="margin-left: 15px;margin-top: 50px;width:1246px;padding-top: 10px;font-size:18px">
+          <mat-label style="font-size:14.2px">Bio</mat-label>
+          <input matInput formControlName="bio" type="text"  placeholder="Enter Bio Here">
+          <mat-error *ngIf=" informationForm.get('username')">Bio is required</mat-error>
+        </mat-form-field>
+        </div> 
+        </div>   
+        
+        
+        <!-- matform field for accepting date of birth in an specific regex expression -->
+      <div class="abc" style="margin-top:-29px">
+      <mat-form-field appearance="outline" style="margin-left: 15px;margin-top: 47px;width: 612px;" >
+          <mat-label>Birth Date</mat-label>
+          <input type="text" matInput formControlName="birthdate" class="date-picker"  pattern="\d{1,2}/\d{1,2}/\d{4}"/>
+         <mat-error *ngIf="informationForm.get('email')">Enter your Birth Date</mat-error>
+          <mat-error *ngIf="informationForm.get('email')">Format(00//00//0000)</mat-error>
+        </mat-form-field>
+       
+              <!-- matform field for accepting phone number in an specific regex expression -->
+      <mat-form-field class="example-full-width" appearance="outline" style="margin-left: 15px;margin-top: 47px;width: 611px;margin-right: -9px;  margin-left: 17px;" >
+        <mat-label>phone</mat-label>
+        <span matPrefix>+1 &nbsp;</span>
+        <input type="tel" matInput placeholder="123-456-8790" formControlName="phone" placeholder="Enter Phone No" pattern="(7|8|9)\d{9}">
+        <mat-error *ngIf="informationForm.get('role')">Phone Number is required</mat-error>
+        <mat-error *ngIf="informationForm.get('role')">please enter valid Number</mat-error>
+      </mat-form-field>
+      </div>
+
+
+
+    <!-- matform field for accepting website in an specific regex expression -->
+        <div class="abcd" style="margin-top:-24px">
+        <mat-form-field appearance="outline" style="margin-left: 15px;
+        margin-top: 47px;
+        width: 612px;" >
+        <mat-label>Website</mat-label>
+        <input matInput  type="text" formControlName="website" placeholder="Status" pattern="^(http(s)?:\/\/)+[\w\-\._~:\/?#[\]@!\$&'\(\)\*\+,;=.]+$"   >
+        <mat-error *ngIf="informationForm.get('status')">Enter Website</mat-error>
+        <mat-error *ngIf="informationForm.get('status')">Enter valid Website address</mat-error>
+
+      <!-- matform field for accepting country in upper case Automatically-->
+      </mat-form-field>
+      <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px;  width: 614px;" >
+      <mat-label>Country</mat-label>
+        <input matInput  type="text" formControlName="country" placeholder="Status" onkeyup="this.value = this.value.toUpperCase();">
+        <mat-error *ngIf="informationForm.get('company')">Enter Country</mat-error>
+      </mat-form-field>
+
+      <div style="margin-top:-25px">
+      <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px; width: 614px;" >
+      <mat-label>Languages</mat-label>
+        <input matInput  type="text" formControlName="languages" placeholder="Enter Languages" >
+        <mat-error *ngIf="informationForm.get('company')">Enter languages</mat-error>
+      </mat-form-field>
+
+
+      <div style="margin-top: -80px;margin-left: 650px;">
+    <h1 style="font-size:16px">Gender</h1>&nbsp;
+    <div style="margin-top:-31px">
+      <mat-radio-group formControlName="category">
+        <!-- performing biding the value and interpolating the values by using ngfor directive to get array items  -->
+      <mat-radio-button *ngFor="let fresh of freshness" [value]="fresh">
+       {{fresh}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </mat-radio-button>
+      </mat-radio-group>
+      </div>
+      </div>
+      
+
+     
+      
+      </div>
+      </div>
+
+       
+ <!-- buttons for storing values in json server by using save changes button -->
+ <!-- logging out by using cancel and reloading the page -->
+    <button mat-raised-button (click)="addproduct()" class="btn btn-primary" style="margin-left: 16px;width: 165px;margin-top: 43px;" >SAVE CHANGES</button>
+    <div style="margin-top: -37px;height: 38px;">
+    <button style="margin-left: 210px;height: 36px;width: 90px;border-radius: 5px;color: #585858;color: #B0B0B0;
+    background-color: white;
+    border-color: black;" class="abcd" (click)="log()" >CANCEL</button></div>
+    </form>
+ 

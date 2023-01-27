@@ -1,0 +1,70 @@
+<div mat-dialog-content>
+    <form [formGroup]="securityForm"> 
+        <!-- form mat field for accepting password input. -->
+ <div class="abc" style="margin-top:-29px">
+     <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px; width: 612px;" >
+        <mat-label>Current Password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="currentpwd">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+   </div>
+
+        <!--  second mat form field for accepting password input. -->
+   <div class="abcd" style="margin-top:-24px">
+        <mat-form-field appearance="outline" style="margin-left: 15px;
+        margin-top: 47px;
+        width: 612px;" >
+           <mat-label>New Password</mat-label>
+           <input matInput [type]="hide ? 'password' : 'text'" formControlName="newpwd">
+           <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+           </button>
+         </mat-form-field>
+
+
+         <!--  third mat form field for accepting password input. -->
+   <div style="margin-top:-25px">
+    <mat-form-field appearance="outline" style="margin-left: 15px;
+    margin-top: 47px;
+    width: 612px;" >
+       <mat-label>Confirm New Password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmpwd">
+       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+       </button>
+     </mat-form-field>
+     <div>
+  <mat-icon style="margin-left:18px">key</mat-icon>
+  <div style="margin-top: -26px;margin-left: 57px;">
+    <b style="font-size: 18px;">Two-factor authentication</b>
+  </div>
+  </div>
+   <div><mat-icon style="margin-left: 601px;margin-top: 62px;">lock</mat-icon>
+    <div style="text-align: center;margin-left: -54px;margin-top: 19px;font-size: 18px;">
+        Two factor authentication is not enabled yet.
+    </div>
+    <div style="text-align: center;font-size: 13px;margin-left: -58px;margin-top: 22px;">
+        Two-factor authentication adds an additional  layer  of<br>
+        security to your account by requiring more than just a<br>
+                    password to log in,Learn more.
+    </div>
+   </div>
+
+  
+   
+   </div>
+   </div>
+   
+ 
+ <button mat-raised-button (click)="addproduct()" class="btn btn-primary" style="margin-left: 16px;
+ width: 165px;margin-top: 43px;" >SAVE CHANGES</button>
+ <div style="margin-top: -37px;
+ height: 38px;">
+ <button style="margin-left: 210px;height: 36px;width: 90px;border-radius: 5px;color: #585858;color: #B0B0B0;
+ background-color: white;
+ border-color: black;" class="abcd" (click)="log()" >CANCEL</button></div>
+ 
+ </form>
+
