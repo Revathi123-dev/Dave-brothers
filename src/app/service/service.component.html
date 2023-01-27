@@ -6,7 +6,7 @@
             <!-- mat form field for bio -->
       <mat-form-field appearance="outline" style="margin-left: 15px;margin-top: 50px;width:1246px;padding-top: 10px;font-size:18px">
           <mat-label style="font-size:14.2px">Bio</mat-label>
-          <input matInput formControlName="bio" type="text"  placeholder="Enter Bio Here">
+          <input matInput formControlName="bio" type="text"  placeholder="Enter Bio Here" style="font-size:14px">
           <mat-error *ngIf=" informationForm.get('username')">Bio is required</mat-error>
         </mat-form-field>
         </div> 
@@ -18,8 +18,8 @@
       <mat-form-field appearance="outline" style="margin-left: 15px;margin-top: 47px;width: 612px;" >
           <mat-label>Birth Date</mat-label>
           <input type="text" matInput formControlName="birthdate" class="date-picker"  pattern="\d{1,2}/\d{1,2}/\d{4}"/>
-         <mat-error *ngIf="informationForm.get('email')">Enter your Birth Date</mat-error>
-          <mat-error *ngIf="informationForm.get('email')">Format(00//00//0000)</mat-error>
+         <mat-error *ngIf="informationForm.get('birthdate')">Enter your Birth Date</mat-error>
+          <mat-error *ngIf="informationForm.get('birthdate')">Format(00//00//0000)</mat-error>
         </mat-form-field>
        
               <!-- matform field for accepting phone number in an specific regex expression -->
@@ -27,8 +27,8 @@
         <mat-label>phone</mat-label>
         <span matPrefix>+1 &nbsp;</span>
         <input type="tel" matInput placeholder="123-456-8790" formControlName="phone" placeholder="Enter Phone No" pattern="(7|8|9)\d{9}">
-        <mat-error *ngIf="informationForm.get('role')">Phone Number is required</mat-error>
-        <mat-error *ngIf="informationForm.get('role')">please enter valid Number</mat-error>
+        <mat-error *ngIf="informationForm.get('phone')">Phone Number is required</mat-error>
+        <mat-error *ngIf="informationForm.get('phone')">please enter valid Number</mat-error>
       </mat-form-field>
       </div>
 
@@ -41,22 +41,22 @@
         width: 612px;" >
         <mat-label>Website</mat-label>
         <input matInput  type="text" formControlName="website" placeholder="Status" pattern="^(http(s)?:\/\/)+[\w\-\._~:\/?#[\]@!\$&'\(\)\*\+,;=.]+$"   >
-        <mat-error *ngIf="informationForm.get('status')">Enter Website</mat-error>
-        <mat-error *ngIf="informationForm.get('status')">Enter valid Website address</mat-error>
+        <mat-error *ngIf="informationForm.get('website')">Enter Website</mat-error>
+        <mat-error *ngIf="informationForm.get('website')">Enter valid Website address format:http://www.websitename.com</mat-error>
 
       <!-- matform field for accepting country in upper case Automatically-->
       </mat-form-field>
       <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px;  width: 614px;" >
       <mat-label>Country</mat-label>
         <input matInput  type="text" formControlName="country" placeholder="Status" onkeyup="this.value = this.value.toUpperCase();">
-        <mat-error *ngIf="informationForm.get('company')">Enter Country</mat-error>
+        <mat-error *ngIf="informationForm.get('country')">Enter Country</mat-error>
       </mat-form-field>
 
       <div style="margin-top:-25px">
       <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px; width: 614px;" >
       <mat-label>Languages</mat-label>
         <input matInput  type="text" formControlName="languages" placeholder="Enter Languages" >
-        <mat-error *ngIf="informationForm.get('company')">Enter languages</mat-error>
+        <mat-error *ngIf="informationForm.get('languages')">Enter languages</mat-error>
       </mat-form-field>
 
 

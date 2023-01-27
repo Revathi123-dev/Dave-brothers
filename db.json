@@ -1,137 +1,16 @@
 {
   "Company": [
     {
-      "productname": "yy",
-      "category": "ui",
-      "freshness": "ui",
-      "price": "io",
-      "comment": "jk",
-      "date": "kl",
+      "username": "Revathi",
+      "name": "Brungi",
+      "email": "brungirevathi123@gmail.com",
+      "role": "Angular Js intern",
+      "status": "Final Year Student",
+      "company": "Student",
       "id": 1
-    },
-    {
-      "username": "hj",
-      "name": "j",
-      "email": "jk",
-      "role": "jk",
-      "status": "jk",
-      "company": "jk",
-      "id": 2
-    },
-    {
-      "username": "jk",
-      "name": "jk",
-      "email": "jk",
-      "role": "kl",
-      "status": "kl",
-      "company": "jk",
-      "id": 3
-    },
-    {
-      "username": "ree",
-      "name": "jjhfeg",
-      "email": "brungirevathi123@gmail.com",
-      "role": "negjfg",
-      "status": "fgheg",
-      "company": "dnbhdgb",
-      "id": 4
-    },
-    {
-      "username": "fgd",
-      "name": "bvn",
-      "email": "revathi123@gmail.com",
-      "role": " nbv",
-      "status": "bnvg",
-      "company": " bnvg",
-      "id": 5
-    },
-    {
-      "username": "zhkfsd",
-      "name": "fhvgsfg",
-      "email": "brungirevathi123@gmail.com",
-      "role": "mnsgjhsfg",
-      "status": "hfgfdg",
-      "company": "sgdsf",
-      "id": 6
-    },
-    {
-      "username": "fhjsf",
-      "name": "gsfg",
-      "email": "brungirevathi123@gmail.com",
-      "role": "hsgjag",
-      "status": "sfggsfg",
-      "company": "sfagsafgs",
-      "id": 7
-    },
-    {
-      "username": "bsags",
-      "name": " sfabg",
-      "email": "revathi123@gmail.com",
-      "role": "hdfsgd",
-      "status": "dsfhgfd",
-      "company": "hdfsgsd",
-      "id": 8
-    },
-    {
-      "username": "n xnzb",
-      "name": "xzv",
-      "email": "brungirevathi123@gmail.com",
-      "role": "nzv",
-      "status": "xzbxz",
-      "company": "zbzb",
-      "id": 9
     }
   ],
   "security": [
-    {
-      "username": "ngjhdfg",
-      "email": "26/01/2003",
-      "role": "8965498789",
-      "status": "http://www.website.com",
-      "company": "DHH",
-      "language": "hjasgag",
-      "category": "Male",
-      "id": 1
-    },
-    {
-      "email": "26/01/2003",
-      "role": "7686545643",
-      "status": "http://website.com",
-      "company": "JHSJK",
-      "language": "bfdgsd",
-      "category": "Female",
-      "id": 2
-    },
-    {
-      "email": "jdhgjdhsg",
-      "role": "8765439876",
-      "status": "http://website.com",
-      "company": "GHh",
-      "language": "nbdsdsh",
-      "category": "Female",
-      "id": 3
-    },
-    {
-      "email": "1234",
-      "status": "123",
-      "company": "BVGHv",
-      "language": "nmdbdh",
-      "category": "Female",
-      "id": 4
-    },
-    {
-      "email": "sajhgsbag",
-      "status": "sanbgnsadg",
-      "language": "nsabgsafg",
-      "category": "Other",
-      "id": 5
-    },
-    {
-      "email": "ncvxc",
-      "status": "ncxv",
-      "language": "xc nvb",
-      "id": 6
-    },
     {
       "currentpwd": "sdbhjsag",
       "newpwd": "nasbgas",
@@ -143,82 +22,15 @@
       "newpwd": "xzb",
       "confirmpwd": "xcvbx",
       "id": 8
+    },
+    {
+      "currentpwd": "revathi001@",
+      "newpwd": "Reva006@",
+      "confirmpwd": "Reva006@",
+      "id": 9
     }
   ],
   "profile": [
-    {
-      "username": "nmbvxnzv",
-      "name": " xvbxb",
-      "email": "brungirevathi123@gmail.com",
-      "role": "nxbvnxb",
-      "status": "sbsg",
-      "company": "nsbagfs",
-      "id": 1
-    },
-    {
-      "username": "nbshdffsfa",
-      "name": "dfgnfmfsh",
-      "email": "brungirevathi123@gmail.com",
-      "role": "sngjhsfg",
-      "status": "sfngsgfgnas",
-      "company": "sfnghsg",
-      "id": 2
-    },
-    {
-      "username": "n dxmgnd",
-      "name": "mdnh,s",
-      "email": "brungirevathi123@gmail.com",
-      "role": "ndgnmdsh",
-      "status": " dhn",
-      "company": "mndfh",
-      "id": 3
-    },
-    {
-      "username": "bszgv",
-      "name": "sdnbfmsag",
-      "email": "26/10/2008",
-      "role": "8765432987",
-      "status": "https://www.website.com",
-      "company": "Hshf",
-      "id": 4
-    },
-    {
-      "username": "cvbv",
-      "name": "vcb",
-      "email": "26/10/2008",
-      "role": "7075514358",
-      "status": "https://www.website.com",
-      "company": "GHh",
-      "id": 5
-    },
-    {
-      "username": "b ncv",
-      "email": "26/01/2003",
-      "role": "7075371549",
-      "status": "http://www.website.com",
-      "company": "GHf",
-      "id": 6
-    },
-    {
-      "username": "nsbfmsag",
-      "email": "26/01/2003",
-      "role": "8006787654",
-      "status": "http://www.website.com",
-      "company": "HGb",
-      "language": "hgh",
-      "category": "Male",
-      "id": 7
-    },
-    {
-      "username": "nbdb",
-      "email": "26/01/2003",
-      "role": "8006787654",
-      "status": "http://www.website.com",
-      "company": "DFf",
-      "language": "sdg",
-      "category": "Female",
-      "id": 8
-    },
     {
       "bio": " dfnsm",
       "birthdate": "26/01/2003",
@@ -238,6 +50,16 @@
       "languages": "nnsbag",
       "category": "Female",
       "id": 10
+    },
+    {
+      "bio": "I am an student",
+      "birthdate": "26/01/2003",
+      "phone": "7075371549",
+      "website": "http://www.website.com",
+      "country": "INDIa",
+      "languages": "telugu,hindi,english",
+      "category": "Female",
+      "id": 11
     }
   ]
 }

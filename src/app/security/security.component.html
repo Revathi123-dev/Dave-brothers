@@ -4,10 +4,13 @@
  <div class="abc" style="margin-top:-29px">
      <mat-form-field appearance="outline" style="margin-left: 15px; margin-top: 47px; width: 612px;" >
         <mat-label>Current Password</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'" formControlName="currentpwd">
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="currentpwd" >
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
+        <mat-error *ngIf="securityForm.get('currentpwd')">Current Password is required</mat-error>
+
+
       </mat-form-field>
    </div>
 
@@ -17,10 +20,12 @@
         margin-top: 47px;
         width: 612px;" >
            <mat-label>New Password</mat-label>
-           <input matInput [type]="hide ? 'password' : 'text'" formControlName="newpwd">
+           <input matInput [type]="hide ? 'password' : 'text'" formControlName="newpwd"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
            </button>
+           <mat-error *ngIf="securityForm.get('newpwd')">Enter New password</mat-error>
+             <mat-error *ngIf="securityForm.get('newpwd')">Password should contain Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character</mat-error>
          </mat-form-field>
 
 
@@ -30,10 +35,16 @@
     margin-top: 47px;
     width: 612px;" >
        <mat-label>Confirm New Password</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmpwd">
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmpwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+       
+
        </button>
+       <mat-error *ngIf="securityForm.get('confirmpwd')">Confirm your new password</mat-error>
+       <!-- <mat-error *ngIf="securityForm.get('confirmpwd')">Current Password is required</mat-error> -->
+
+
      </mat-form-field>
      <div>
   <mat-icon style="margin-left:18px">key</mat-icon>
