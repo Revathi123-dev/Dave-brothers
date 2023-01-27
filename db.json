@@ -2,64 +2,32 @@
   "Company": [
     {
       "username": "Revathi",
-      "name": "Brungi",
+      "name": "Revathi",
       "email": "brungirevathi123@gmail.com",
-      "role": "Angular Js intern",
+      "role": "Student",
       "status": "Final Year Student",
-      "company": "Student",
+      "company": "JNTUA",
       "id": 1
     }
   ],
   "security": [
     {
-      "currentpwd": "sdbhjsag",
-      "newpwd": "nasbgas",
-      "confirmpwd": "nasbgmasg",
-      "id": 7
-    },
-    {
-      "currentpwd": "nbvnzxb",
-      "newpwd": "xzb",
-      "confirmpwd": "xcvbx",
-      "id": 8
-    },
-    {
-      "currentpwd": "revathi001@",
+      "currentpwd": "hgdfhsdf",
       "newpwd": "Reva006@",
       "confirmpwd": "Reva006@",
-      "id": 9
+      "id": 1
     }
   ],
   "profile": [
     {
-      "bio": " dfnsm",
-      "birthdate": "26/01/2003",
-      "phone": "8006787654",
-      "website": "http://www.website.com",
-      "country": "554",
-      "languages": "dfghdf",
-      "category": "Female",
-      "id": 9
-    },
-    {
-      "bio": "xn vbxv",
-      "birthdate": "26/01/2003",
-      "phone": "7075371549",
-      "website": "http://www.website.com",
-      "country": "NSBGd",
-      "languages": "nnsbag",
-      "category": "Female",
-      "id": 10
-    },
-    {
       "bio": "I am an student",
       "birthdate": "26/01/2003",
-      "phone": "7075371549",
+      "phone": "8765489765",
       "website": "http://www.website.com",
-      "country": "INDIa",
+      "country": "NBc",
       "languages": "telugu,hindi,english",
       "category": "Female",
-      "id": 11
+      "id": 1
     }
   ]
 }

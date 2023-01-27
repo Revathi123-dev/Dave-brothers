@@ -15,9 +15,6 @@ import { ServiceComponent } from './service/service.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { SecurityComponent } from './security/security.component';
 
-// import { InfoComponent } from './info/info.component';
-// import { InfoComponent } from './info/info.component';
-// import { MatFormFieldModule } from "@angular/material/form-field";
 
 
 
@@ -27,8 +24,7 @@ import { SecurityComponent } from './security/security.component';
     InformationComponent,
     ServiceComponent,
     SecurityComponent,
-    // InfoComponent,
-    // InfoComponent
+   
   ],
   imports: [
     BrowserModule,

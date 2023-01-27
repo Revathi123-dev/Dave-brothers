@@ -48,7 +48,7 @@ export class InformationComponent implements OnInit {
       const reader=new FileReader();
       reader.onload=(filedata)=>{
         image.url=reader.result+'';
-        this.image =[];//accepting arrays of images but after taking one image its getting resetted
+      this.image =[];//accepting arrays of images but after taking one image its getting resetted
        this.image.push(image);
     
 
@@ -67,12 +67,18 @@ export class InformationComponent implements OnInit {
     // console.log(event)//checking event is getting invoked or not by using right-click console
 
   }
-  deleteimage(image:any){
-    const index = this.image.indexOf(image);
-    this.image.splice(index,0);
-    this.allfiles.splice(index,0);
+  // deleteimage(image:any){
+  //   const index = this.image.indexOf(image);
+  //   this.image.splice(index,0);
+  //   this.image.reset();
+  //   this.allfiles.splice(index,0);
 
-  }
+  // }
+  deleteImage(image:any){
+     const index = this.image.indexOf(image);
+    this.image.splice(image, 1);
+   }
+   
 
   addproduct(){
     // console.log(this.userForm.value);//for checking userform is taking values in an array or not!
@@ -94,7 +100,7 @@ export class InformationComponent implements OnInit {
   log(){
     alert("you have been logged out!");
     // this.userForm.log();
-    location.reload();
+    // location.reload();
 
   }
 
